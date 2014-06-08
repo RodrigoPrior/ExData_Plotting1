@@ -11,7 +11,7 @@ if (!file.exists("data")) {
 
 # download file
 fileUrl <- "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip"
-# download.file(fileUrl, destfile = "./data/household_power_consumption.zip", method = "curl")
+download.file(fileUrl, destfile = "./data/household_power_consumption.zip", method = "curl")
 list.files("./data")
 dateDownloaded <- date()
 
